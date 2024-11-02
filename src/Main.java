@@ -1,6 +1,6 @@
 public class Main {
     //1 задача
-    public static void printcheckingYear(int year){
+    public static void printcheckYear(int year){
         if (year > 1584 && (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0)){
             System.out.println(year + " год — високосный год");
         }else {
@@ -10,11 +10,11 @@ public class Main {
     public static void main(String[] args) {
         //переменные для 1 задачи
         int year = 2004;
-        printcheckingYear(year);
+        printcheckYear(year);
         // переменные для 2 задачи
         int clientOs = 1;
         int clientDeviceYear = 2017;
-        printcheckingOs(clientOs , clientDeviceYear);
+        printcheckOs(clientOs , clientDeviceYear);
         //переменные для 3 задачи
         int deliveryDistance = 67;
         int days = distance(deliveryDistance);
@@ -28,7 +28,7 @@ public class Main {
     }
     //2 задача
 
-    public static void printcheckingOs (int clientOs , int clientDeviceYear){
+    public static void printcheckOs (int clientOs , int clientDeviceYear){
         if (clientOs == 0){
             if (clientDeviceYear >= 2015){
                 System.out.println("Установите версию приложения для iOS по ссылке");
